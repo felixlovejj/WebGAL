@@ -1,0 +1,34 @@
+;============================================
+; 《代码中的中国：1024航迹云》
+; 第一章：拓荒期（1950s-1980s）
+;============================================
+
+;--- 开场：东九楼赶作业 ---
+setVar:chapter=1;
+setVar:playerName=林知远;
+bgm:bgm_retro.mp3 -volume=60 -enter=2000;
+intro:晚上十一点，东九楼自习室|你盯着屏幕上的编译错误，第7次尝试提交数据结构作业;
+changeBg:bg_d9_night.jpg -next;
+林知远:（自言自语）不是吧……这红黑树的旋转逻辑明明是对的啊，怎么还是段错误……
+
+;注：可以用intro做蓝屏特效
+intro:WARNING: Segmentation Fault|Core Dumped……|等等，这是什么？;
+changeBg:bg_system.jpg -exit=fadeOut -enter=fadeIn -next;
+setTransition: -target=bg-main -enter=shockwaveIn -next;
+
+;系统精灵1024登场
+changeFigure:fig_1024.png -center -enter=shockwaveIn -next;
+setAnimation:move-front-and-back -target=fig-center -continue;
+
+;--- 系统空间 ---
+;提示信息
+intro:【专业历史编译系统 v1.0】|正在建立历史上下文……|加载完成。欢迎进入代码的过去。;
+1024:叮！检测到一名正在debug的计算机学子。我是1024，你的历史编译助手。
+
+林知远:……什么情况？我是不是赶作业出现幻觉了？
+
+1024:不是幻觉哦。你现在接入的是"专业历史编译系统"——简单来说，我会带你看看，你现在写的每一行代码，背后站着多少前辈。
+
+1024:准备好了吗？我们从最早的那一行代码开始——;
+
+changeScene:hust_ch1_1950s.txt;

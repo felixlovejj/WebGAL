@@ -1,83 +1,145 @@
-![WebGAL Slogan](https://github.com/OpenWebGAL/WebGAL/assets/30483415/ede38a39-d054-4fee-a3e9-fc5e764f358d)
+# 《代码中的中国：1024航迹云》
 
-### **[English Version](/README_EN.md)** | **[日本語版](/README_JP.md)** | **[한국어](/README_KO.md)** | **[Français](/README_FR.md)**
+> 华中科技大学 计算机学院 创新2401班 8人小组项目
+>
+> 基于 WebGAL 引擎制作的思政教育视觉小说（Galgame）
 
-**[Help us with translation | 协助翻译 | 翻訳のお手伝い | 번역을 도와주세요](https://github.com/OpenWebGAL/WebGAL/tree/dev/packages/webgal/src/translations)**
+**[在线游玩 →](https://felixlovejj.github.io/WebGAL/)**
 
-**[Join Discord Server | 加入 Discord 讨论 | Discordのディスカッションに参加する](https://discord.gg/kPrQkJttJy)**
+---
 
-<a href="https://www.producthunt.com/posts/webgal?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-webgal" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=443280&theme=light" alt="WebGAL - Galgame&#0032;Editing&#0046;&#0032;Redefined | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+## 项目简介
 
-# WebGAL
+主角林知远是创新2401班的大二学生，在东九楼赶作业时意外进入了"专业历史编译系统"，穿越中国计算机史的三个时代：
 
-**界面美观、功能强大、易于开发的全新网页端视觉小说引擎**
+- **第一章 拓荒期（1950s-1980s）**：纸上写代码、排队上机、华工自研微机
+- **第二章 突围期（1990s-2010s）**：存储国家队、技术封锁、守护数据安全
+- **第三章 领航期（2020s-2026）**：新质生产力、AI浪潮、卡脖子与报国
 
-# WebGAL 提供可视化编辑器
+---
 
-**创作视觉小说，何须会编程？欢迎体验 [WebGAL 图形化编辑器](https://github.com/OpenWebGAL/WebGAL_Terre/)**
+## 快速开始
 
-## 在线体验
+```bash
+# 克隆项目
+git clone https://github.com/felixlovejj/WebGAL.git
+cd WebGAL
 
-#### WebGAL 示例游戏，一般会演示最新开发的功能
+# 安装依赖（只需一次）
+yarn install
 
-https://demo.openwebgal.com
+# 启动本地预览
+yarn dev
+```
 
-#### 完整的游戏
+打开 `http://localhost:3000/`，修改文件后浏览器自动刷新。
 
-[WebGAL 官方游戏展示页](https://www.openwebgal.com/games/)
+---
 
-[Elf of Era Idols Project](https://store.steampowered.com/app/2414730/Elf_of_Era_Idols_Project/) (通过 Steam 获取)
+## 协作方式
 
-## 使用 WebGAL 制作游戏
+### 全组都用 PR（Pull Request）
 
-[WebGAL 开发文档](https://docs.openwebgal.com/)
+每个人 Fork 仓库 → 上传文件 → 提 PR。不需要加协作者，不需要学分支。
 
-[下载 WebGAL 图形化编辑器](https://github.com/OpenWebGAL/WebGAL_Terre/releases)
+### 第一步：Fork 仓库
 
-你也可以使用源代码或 [WebGAL 调试工具](https://github.com/OpenWebGAL/WebGAL/releases) 制作游戏，并使用 [WebGAL Script VS Code 插件](https://marketplace.visualstudio.com/items?itemName=c6h5-no2.webgal-script-basics) 来启用语法高亮
+打开 `https://github.com/felixlovejj/WebGAL` → 点右上角 **Fork** → 完成。
 
-## WebGAL 优势与特色
+你就有了一个自己的副本：`https://github.com/你的用户名/WebGAL`
 
-一次编写，处处运行，无需网页开发基础，3 分钟即可学会所有的语法，只要你有灵感，就可以立刻开始开始创作你自己的视觉小说！
+### 上传图片/音频：网页上传就够了
 
-### 界面美观
+直接在 GitHub 网页操作：
 
-美观优雅的图形用户界面与交互效果，一切都是为了更好的用户体验。
+1. 打开你 Fork 的仓库
+2. 点进对应文件夹（如 `packages/webgal/public/game/background/`）
+3. 点 **Add file → Upload files**
+4. 拖入你的图片/音乐文件
+5. 在提交信息里写 `添加 xxx 场景背景`
+6. 点 **Commit changes**，选 `Create a new branch...`（分支名随便填，如 `add-bg-xxx`）
+7. 点 **Propose changes** → 自动跳到 PR 页面
+8. 点 **Create pull request**
 
-### 功能强大
 
-不仅支持主流视觉小说引擎所具有的几乎全部功能，你还可以使用 Pixi.js 为你的游戏添加自定义效果。
 
-### 易于开发
+### 剧本同学：需要本地操作
 
-无论是使用 WebGAL 脚本还是使用可视化编辑器进行开发，一切都是那么简单自然。
+因为改剧本需要预览效果，所以必须 clone 到本地。
 
-### 参与 WebGAL 的开发工作
+```bash
+# 克隆你 Fork 的仓库（不是主仓库）
+git clone https://github.com/你的用户名/WebGAL.git
+cd WebGAL
+yarn install
 
-**想要参与引擎开发的开发者请阅读 [此项目的参与指南](https://docs.openwebgal.com/developers/)**
+# 改剧本前先建一个分支（分支名比如 script/ch1-xxx）
+git checkout -b script/ch1-xxx
 
-### 赞助
+# 改完提交
+git add packages/webgal/public/game/scene/hust_ch1.txt
+git commit -m "修改第一章：xxx"
+git push origin script/ch1-xxx
 
-WebGAL 是一款开源软件，因此你可以免费在 MPL-2.0 开源协议的范畴下使用本软件，并可用于商业使用。
+# 去 GitHub 点 "Compare & pull request"
+```
 
-但即便如此，你的赞助也可以给予开发者前进的动力，让这个项目变得更好。
+> **铁律：同一时间一个人只改一个 .txt 文件。改之前先在群里说一声。**
 
-[赞助本项目](https://docs.openwebgal.com/sponsor/)
+### 分工一览
 
-## WebGAL 相关项目
+```
+角色          改什么目录        操作方式
+────────────────────────────────────────
+美术-背景     background/      网页上传 → PR
+美术-立绘     figure/          网页上传 → PR
+音频-BGM     bgm/              网页上传 → PR
+剧本         scene/*.txt       本地分支 → PR
+```
 
-- [webgal-craft](https://github.com/A-kirami/webgal-craft): 社区开发中的 WebGAL 可视化编辑器。
-- [Webgal_transformEditor](https://github.com/KonshinHaoshin/Webgal_transformEditor): 用于可视化编辑 `setTransform` 与 `changeFigure` 的运镜脚本工具。
-- [webgal-language-tools](https://github.com/xiaoxustudio/webgal-language-tools): 基于 Volar.js 的 WebGAL 语言工具链，提供 LSP、VS Code 扩展和 Monaco 支持。
-- [webgal-tool-l2dw](https://github.com/LostWaym/webgal-tool-l2dw): 面向 WebGAL 的 Live2D 工具，可调整模型与动作并导出相关指令。
-- [webgal-mygo](https://github.com/boomwwww/webgal-mygo): 面向 MyGO 项目的 WebGAL 专版引擎维护分支。
 
-# Sponsors
+## 项目结构
 
-<a href="https://openwebgal.com/">
-<img alt="Sponsor" src="https://raw.githubusercontent.com/OpenWebGAL/static/main/sponsors.png">
-</a>
+```
+packages/webgal/public/game/
+├── background/          ← 背景图（2560×1440，jpg/png）
+├── figure/              ← 角色立绘（1024×1536 透明底）+ 小头像（256×256）
+├── bgm/                 ← 背景音乐（mp3/ogg）
+├── scene/               ← ★ 剧本文件（.txt）
+│   ├── hust_ch1.txt        第一章序章
+│   ├── hust_ch1_1950s.txt  第一章正篇
+│   ├── hust_ch2.txt        第二章
+│   └── hust_ch3.txt        第三章
+├── vocal/               ← 语音（可选）
+├── config.txt           ← 游戏标题配置
+└── template/            ← UI 模板
+```
 
-## Stargazers over time
+---
 
-[![Stargazers over time](https://starchart.cc/OpenWebGAL/WebGAL.svg)](https://starchart.cc/OpenWebGAL/WebGAL)
+## 部署到 GitHub Pages
+
+```bash
+# 1. 构建
+yarn webgal:build
+
+# 2. 推送到 gh-pages 分支
+cd packages/webgal/dist
+git init && git checkout -b gh-pages       # 仅首次
+touch .nojekyll                            # 仅首次
+git remote add origin https://github.com/felixlovejj/WebGAL.git  # 仅首次
+git add -A
+git commit -m "Deploy"
+git push -f origin gh-pages
+```
+
+> 如果用代理，push 时加 `-c http.proxy=http://127.0.0.1:7890 -c https.proxy=http://127.0.0.1:7890`
+
+---
+
+
+## 引擎说明
+
+本项目基于 [WebGAL](https://github.com/OpenWebGAL/WebGAL) 引擎 v4.5，MPL-2.0 开源协议。
+
+原引擎 README 见 [README_old.md](README_old.md)。
