@@ -8,80 +8,95 @@
 
 
 ## 任务：
-## 一、背景图（16张）
 
-> 放到 `packages/webgal/public/game/background/` 分辨率建议 **2560×1440**（16:9），格式 png 或 jpg
+### 一、背景图（18张，16:9，2560×1440，jpg/png）
 
-|文件名|场景|AI 提示词（中文）|
-|---|---|---|
-|`bg_d9_night.jpg`|东九楼夜景|中国大学教学楼夜景，东九楼外观，暖黄色灯光从窗户透出，深夜氛围，零星几个窗户还亮着灯，画面偏暗，孤独感，二次元风格/新海诚风格，16:9|
-|`bg_system.jpg`|系统空间|科幻数字空间，深蓝色背景，流动的二进制代码和发光数据流，中央有一个半透明的全息界面，科技感，赛博朋克风格但偏明亮，16:9|
-|`bg_hust_old.jpg`|1958年华中工学院|1950年代中国大学校园，喻家山下简朴的苏式建筑，灰砖楼，泥土路，梧桐树苗，阳光明媚，怀旧温暖色调，二次元风格背景画，16:9|
-|`bg_computer_room_old.jpg`|老旧机房|1960年代计算机机房，一台巨大的电子管计算机占据整个房间，磁带机、闪烁的指示灯面板、灰色金属机柜，穿白大褂的技术人员背影，暖黄色灯光，二次元风格场景，16:9|
-|`bg_hust_1980s.jpg`|1980年代华工|改革开放初期的中国大学校园，80年代风格教学楼，自行车棚，穿着蓝白格子衬衫的学生来来往往，梧桐树成荫，阳光明媚，二次元风格背景，16:9|
-|`bg_lab_1980s.jpg`|1980年代实验室|1980年代电子实验室，木制工作台上放着面包板、示波器、万用表、绿色CRT显示器，墙上贴着电路图和手写笔记，焊接烟雾淡淡飘散，怀旧暖色调，二次元风格，16:9|
-|`bg_hust_1990s.jpg`|1990年代华科|1990年代中国大学校园，稍现代化的教学楼，Windows 95风格的台式机，网络布线裸露在天花板上，学生背着帆布包，世纪末氛围，二次元风格，16:9|
-|`bg_storage_lab.jpg`|存储实验室|1990年代末的计算机存储实验室，堆叠的磁盘阵列柜，CRT显示器上显示着RAID配置界面，蓝色调的机房灯光，线缆密集但有序，严肃专业氛围，二次元风格，16:9|
-|`bg_storage_lab_modern.jpg`|现代存储实验室|2010年代现代化数据中心风格的实验室，整齐的服务器机柜排列，蓝色LED灯带，玻璃隔断，监控大屏显示着分布式存储拓扑图，冷色调专业氛围，二次元风格，16:9|
-|`bg_hust_modern.jpg`|现代华科校园|2020年代的华中科技大学，现代化玻璃幕墙教学楼，校园绿树成荫，学生在广场上穿行，阳光明媚，明亮清新的二次元风格背景，16:9|
-|`bg_classroom_modern.jpg`|创新班教室|现代化大学讨论教室，智慧黑板/大屏幕，圆桌式座位，笔记本电脑、平板散落在桌上，窗外可见校园绿树，轻松学术氛围，二次元风格，16:9|
-|`bg_hust_autumn.jpg`|华科秋景|华中科技大学秋天景色，金黄色银杏和梧桐叶铺满道路，暖色调夕阳，远处喻家山轮廓，宁静而带感伤的美，二次元风格/新海诚风格，16:9|
-|`bg_startup_office.jpg`|创业办公室|光谷创业街的小型办公室，不到40平米，6个人的工位，白板上画着架构图，桌上散落着咖啡杯和泡面，窗外是光谷的现代建筑群，杂乱但充满活力的氛围，二次元风格，16:9|
-|`bg_supercomputing.jpg`|超算中心|国家级超算中心内部，成排的GPU服务器机柜发出低鸣，蓝色冷却灯光，巨大的监控屏幕上跳动着分布式训练任务和数据流，科幻但真实的氛围，二次元风格，16:9|
-|`bg_lab_future.jpg`|忆阻器实验室|前沿纳米器件实验室，精密探针台、示波器显示着忆阻器I-V特性曲线，激光平台，洁净室风格，未来科技感，冷白+蓝色调，二次元风格，16:9|
-|`bg_hust_sunset.jpg`|华科日落|华中科技大学傍晚全景，暖金色夕阳洒在教学楼和梧桐树上，天边云彩染成橙红色，喻家山剪影，宁静、温暖、略带感动的氛围，新海诚风格，16:9|
+```
+packages/webgal/public/game/background/
+```
 
----
+| 文件名                      | 场景               | AI 提示词（用于 Midjourney / DALL·E）                        |
+| --------------------------- | ------------------ | ------------------------------------------------------------ |
+| `bg_d9_night.jpg`           | 东九楼夜景         | chinese university teaching building at night, warm yellow lights from windows, a few windows still lit late at night, dark and quiet atmosphere, yu jiashan mountain silhouette in background, shinkai makoto style, 16:9 --ar 16:9 --style anime |
+| `bg_system.jpg`             | 系统空间           | sci-fi digital space, deep blue background, flowing binary code and glowing data streams, translucent holographic interface at center, cyberpunk but bright, clean modern scifi aesthetic, 16:9 --ar 16:9 |
+| `bg_hust_old.jpg`           | 1958年华中工学院   | 1950s chinese university campus, grey brick soviet-style buildings, dirt paths, young plane trees under blue sky, simple and austere architecture, warm nostalgic sunlight, anime style background, 16:9 --ar 16:9 --style anime |
+| `bg_computer_room_old.jpg`  | 老旧机房           | 1960s computer room, one massive vacuum-tube computer filling whole room, tape drives, blinking indicator lights, grey metal cabinets, technician in white coat working, warm yellow lighting, anime style, 16:9 --ar 16:9 --style anime |
+| `bg_hust_1970s.jpg`         | 1970年代华工       | 1970s chinese university campus after cultural revolution, overgrown grass on campus paths, old teaching buildings, autumn atmosphere, slightly desolate but with sprouts of hope, distant yu jiashan mountain, warm desaturated tones, anime style, 16:9 --ar 16:9 --style anime |
+| `bg_lab_1970s.jpg`          | 1970年代存储实验室 | 1970s chinese electronics lab, workbenches with analog oscilloscopes, soldering irons, hand-drawn circuit diagrams on walls, open-reel tape drives, a minicomputer with front panel lights, dim warm lighting, dusty but authentic, anime style, 16:9 --ar 16:9 --style anime |
+| `bg_lab_1980s.jpg`          | 1980年代实验室     | 1980s electronics laboratory in china, wooden workbench with breadboards, oscilloscope, multimeter, green CRT monitor, circuit diagrams and handwritten notes on wall, faint soldering smoke, warm nostalgic tones, anime style, 16:9 --ar 16:9 --style anime |
+| `bg_hust_1980s.jpg`         | 1980年代华工       | 1980s chinese university campus, early reform-era teaching buildings, bicycle sheds, students in blue-white plaid shirts, mature plane trees, bright sunny day, reform and opening up atmosphere, anime style, 16:9 --ar 16:9 --style anime |
+| `bg_hust_1990s.jpg`         | 1990年代华科       | 1990s chinese university campus, more modern buildings, students carrying canvas bags, windows 95 era desktop computers visible through windows, exposed network cables on ceiling, end-of-century atmosphere, anime style, 16:9 --ar 16:9 --style anime |
+| `bg_storage_lab.jpg`        | 存储实验室         | 1990s computer storage lab, stacked RAID disk array cabinets, CRT monitors showing configuration interfaces, blue server room lighting, dense but orderly cables, serious professional atmosphere, anime style, 16:9 --ar 16:9 --style anime |
+| `bg_storage_lab_modern.jpg` | 现代存储实验室     | 2010s modern data center style lab, neat server racks in rows, blue LED strip lights, glass partitions, large monitoring screens showing distributed storage topology, cool professional tones, anime style, 16:9 --ar 16:9 --style anime |
+| `bg_hust_modern.jpg`        | 现代华科校园       | 2020s huazhong university of science and technology, modern glass curtain wall buildings, lush green campus, students walking through plaza, bright sunny day, fresh clean anime style, 16:9 --ar 16:9 --style anime |
+| `bg_classroom_modern.jpg`   | 创新班教室         | modern university seminar room, smart blackboard or large screen, round-table seating, laptops and tablets on desks, green trees visible through window, relaxed academic atmosphere, anime style, 16:9 --ar 16:9 --style anime |
+| `bg_hust_autumn.jpg`        | 华科秋景           | hust autumn scenery, golden ginkgo and plane tree leaves covering roads, warm sunset light, yu jiashan silhouette in distance, peaceful and slightly sentimental beauty, shinkai makoto style, 16:9 --ar 16:9 |
+| `bg_startup_office.jpg`     | 创业办公室         | small startup office in optical valley, less than 40sqm, 6-person workspace, whiteboard with architecture diagrams, coffee cups and instant noodles on desks, modern buildings visible through window, messy but energetic, anime style, 16:9 --ar 16:9 --style anime |
+| `bg_supercomputing.jpg`     | 超算中心           | national supercomputing center interior, rows of GPU server racks humming, blue cooling lights, massive monitoring screens showing distributed training tasks and data flows, sci-fi but real atmosphere, anime style, 16:9 --ar 16:9 --style anime |
+| `bg_lab_future.jpg`         | 忆阻器实验室       | advanced nano device laboratory, precision probe station, oscilloscope showing memristor I-V curves, laser platform, cleanroom atmosphere, futuristic science, cool white and blue tones, anime style, 16:9 --ar 16:9 --style anime |
+| `bg_hust_sunset.jpg`        | 华科日落           | hust evening panorama, warm golden sunset on teaching buildings and plane trees, orange-red clouds on horizon, yu jiashan silhouette, peaceful warm slightly emotional atmosphere, shinkai makoto style, 16:9 --ar 16:9 |
 
-## 二、角色立绘（8人）
+------
 
-> 放到 `packages/webgal/public/game/figure/` 立绘为**半身像**，人物占画面中下部，建议 **1024×1536** 竖版，png 透明背景 `-expression` 标签对静态图无效，可以忽略
+### 二、角色立绘（9人 + 9小头像，png 透明底）
 
-|文件名|角色|AI 提示词（中文）|
-|---|---|---|
-|`fig_chen.png`|陈老师|1950年代中国青年教师，25岁左右男性，穿白色短袖衬衫扎进深蓝色裤子，黑色半框眼镜，清瘦，目光坚定而温和，黑色短发，中山装风格的朴素打扮，半身立绘，二次元风格，透明背景|
-|`fig_zhang.png`|张工|1980年代中国工程师，30岁左右男性，穿蓝色工装外套，头发轻微稀疏（程序员脱发），微胖，肤色偏黑（长期泡实验室），表情憨厚但眼睛有神，袖子卷到手肘，半身立绘，二次元风格，透明背景|
-|`fig_li.png`|李教授|1990年代-2010年代中国计算机教授，40-50岁男性，银丝边眼镜，灰白短发（学者风范），穿深色夹克或衬衫，瘦削挺拔，眼神深邃有故事感，学者+实干家气质，半身立绘，二次元风格，透明背景|
-|`fig_zhou.png`|周宇博士|2020年代中国博士研究生，26岁左右男性，戴黑框眼镜，穿灰色卫衣+深蓝色外套，略微凌乱的短发，手上拿着一支激光笔或平板，阳光学霸型，有亲和力的微笑，半身立绘，二次元风格，透明背景|
-|`fig_su.png`|苏晴学姐|2020年代中国女性创业者，24岁左右，短发干练，穿白色衬衫+深色休闲西装外套（不系扣），牛仔裤，一手插兜，自信微笑，干练但不失亲切，半身立绘，二次元风格，透明背景|
-|`fig_wang.png`|王浩学长|海归精英，30岁左右男性，穿深蓝色Polo衫+卡其裤（硅谷工程师风格），黑色半框眼镜，干净利落的短发，气质沉稳，带一点经历过选择的成熟感，半身立绘，二次元风格，透明背景|
-|`fig_1024.png`|1024系统精灵|AI助手/数字生命体，中性外观（偏女性化），半透明发光身体，蓝白配色，身体边缘有像素/数据流飘散特效，发光的瞳孔，悬浮姿态，科幻但不冷漠，带一点俏皮感，半身立绘，二次元风格+轻科幻，透明背景|
-|`fig_lin.png`|林知远（主角）|2020年代中国大二学生，20岁男性，穿浅色卫衣或华科文化衫，黑色短发微乱，普通大学生长相（不要太帅），戴眼镜，略带困倦但认真的眼神，邻家学长感，半身立绘，二次元风格，透明背景|
+```
+packages/webgal/public/game/figure/
+```
 
----
+**立绘：1024×1536，半身像，png透明背景**
 
-## 三、小头像（7张，在对话框中显示）
+| 文件名            | 角色           | AI 提示词                                                    |
+| ----------------- | -------------- | ------------------------------------------------------------ |
+| `fig_chen.png`    | 陈老师         | 1950s young chinese teacher, 25-year-old male, white short-sleeve shirt tucked into dark blue trousers, black half-rim glasses, slim build, determined and gentle eyes, short black hair, simple zhongshan-style attire, anime style half-body portrait, transparent background |
+| `fig_zhangjl.png` | 张江陵         | 1970s chinese computer scientist, 50-year-old male, simple dark blue jacket, thin and weathered face, deep-set intelligent eyes with crows feet, grey hair, worn hands, humble but authoritative presence, pioneer scientist, anime style half-body portrait, transparent background |
+| `fig_zhang.png`   | 张工           | 1980s chinese engineer, 30-year-old male, blue work overalls, slightly thinning hair on top (programmer hair loss), slightly chubby, slightly tanned from long lab hours, honest expression but sharp eyes, sleeves rolled to elbows, anime style half-body portrait, transparent background |
+| `fig_li.png`      | 李教授         | 1990-2010s chinese computer science professor, 45-year-old male, silver-rim glasses, greying short hair (scholarly), dark jacket or shirt, thin and upright posture, deep eyes with stories to tell, scholar-practitioner presence, anime style half-body portrait, transparent background |
+| `fig_zhou.png`    | 周宇博士       | 2020s chinese PhD student, 26-year-old male, black frame glasses, grey hoodie under dark blue jacket, slightly messy short hair, holding laser pointer or tablet, sunny academic type, friendly smile, anime style half-body portrait, transparent background |
+| `fig_su.png`      | 苏晴学姐       | 2020s chinese female entrepreneur, 24-year-old, short and neat hairstyle, white shirt + dark casual blazer (unbuttoned), jeans, one hand in pocket, confident smile, capable yet approachable, anime style half-body portrait, transparent background |
+| `fig_wang.png`    | 王浩学长       | chinese returnee elite, 30-year-old male, dark blue polo shirt + khaki pants (silicon valley engineer style), black half-rim glasses, clean short hair, calm and mature expression, experienced-through-choices look, anime style half-body portrait, transparent background |
+| `fig_1024.png`    | 1024系统精灵   | AI assistant digital lifeform, androgynous appearance (slightly feminine), semi-translucent glowing body, blue-white color scheme, pixel/data stream particle effects at body edges, glowing pupils, floating posture, sci-fi but not cold, slightly playful, anime style + light scifi, transparent background |
+| `fig_lin.png`     | 林知远（主角） | 2020s chinese sophomore student, 20-year-old male, light-colored hoodie or HUST t-shirt, slightly messy short black hair, average university student look (not too handsome), glasses, slightly tired but earnest eyes, approachable senior student vibe, anime style half-body portrait, transparent background |
 
-> 放到 `packages/webgal/public/game/figure/` 正方形裁切的**面部特写**，建议 **256×256**，png
+**小头像：256×256，面部特写**
 
-直接从上面的立绘中截取面部区域即可。命名对应关系：
+| 文件名                 | 对应角色 |
+| ---------------------- | -------- |
+| `fig_chen_mini.png`    | 陈老师   |
+| `fig_zhangjl_mini.png` | 张江陵   |
+| `fig_zhang_mini.png`   | 张工     |
+| `fig_li_mini.png`      | 李教授   |
+| `fig_zhou_mini.png`    | 周宇     |
+| `fig_wang_mini.png`    | 王浩     |
+| `fig_lin_mini.png`     | 林知远   |
 
-|文件名|对应角色|
-|---|---|
-|`fig_chen_mini.png`|陈老师面部特写|
-|`fig_zhang_mini.png`|张工面部特写|
-|`fig_li_mini.png`|李教授面部特写|
-|`fig_zhou_mini.png`|周宇面部特写|
-|`fig_wang_mini.png`|王浩面部特写|
-|`fig_lin_mini.png`|林知远面部特写|
+------
 
-> 注意：苏晴（fig_su）在剧本中没有设置 mini avatar，如需添加可在脚本中补充 `miniAvatar:fig_su_mini.png;`
+### 三、BGM（5首，mp3/ogg）
 
----
+```
+packages/webgal/public/game/bgm/
+```
 
-## 四、BGM（5首）
+| 文件名            | 用途           | Suno AI 提示词                                               |
+| ----------------- | -------------- | ------------------------------------------------------------ |
+| `bgm_retro.mp3`   | 第一章拓荒期   | warm nostalgic chinese 1970s film score style, solo piano or small string ensemble, slightly weathered but not sad, reminiscent of classic chinese cinema, 65 BPM |
+| `bgm_tense.mp3`   | 第二章技术封锁 | low string section with electronic textures, tense but not oppressive, sense of drive and urgency, minor key but with hope underneath, building momentum, 85 BPM |
+| `bgm_hopeful.mp3` | 第二章技术突破 | orchestral crescendo from low strings to bright brass, gradual swell from darkness to light, triumphant but earned not bombastic, hope and breakthrough, 75 BPM |
+| `bgm_modern.mp3`  | 第三章现代校园 | electronic beats with ambient synths, light and techy but warm, modern china university vibe, positive forward-looking energy, 95 BPM |
+| `bgm_inspire.mp3` | 第三章高潮结局 | soaring orchestral with piano lead and full strings, uplifting and inspiring melody, patriotic but personal, cinematic climax, suitable for 2-3 minute loop, 85 BPM |
 
-> 放到 `packages/webgal/public/game/bgm/` 格式 mp3 或 ogg
+------
 
-|文件名|用途|风格描述|
-|---|---|---|
-|`bgm_retro.mp3`|第一章：拓荒期|温暖怀旧，钢琴独奏或弦乐小编制，带有50-80年代中国电影配乐的味道，略带沧桑但不悲伤，BPM 60-70|
-|`bgm_tense.mp3`|第二章前半：技术封锁压力|低音弦乐+电子音色，紧张但不压抑，有推动力，BPM 80-90|
-|`bgm_hopeful.mp3`|第二章后半：技术突破|管弦乐逐渐明亮，从低沉到昂扬的渐强结构，希望感，BPM 70-80|
-|`bgm_modern.mp3`|第三章前半：现代校园/AI时代|电子节拍+环境合成器，轻快科技感，不冷，偏温暖电子，BPM 90-100|
-|`bgm_inspire.mp3`|第三章高潮/结局|激昂管弦乐，有"升华"感的旋律，可加入钢琴和弦乐群，BPM 80-90，长度建议2-3分钟可循环|
----
+### 四、可选视频（1个）
 
+```
+packages/webgal/public/game/video/
+```
+
+| 文件名                     | 用途         | 建议                                                         |
+| -------------------------- | ------------ | ------------------------------------------------------------ |
+| `hust_cs_achievements.mp4` | 结尾字幕播放 | HUST CS学院成就混剪（可用素材来自学院官网/公众号），没有则保持脚本中该行注释 |
 ## 项目简介
 
 主角林知远是创新2401班的大二学生，在东九楼赶作业时意外进入了"专业历史编译系统"，穿越中国计算机史的三个时代：
