@@ -5,7 +5,7 @@
     <link rel="icon" type="image/x-icon" href="./icons/favicon.ico" />
     <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
     <link rel="manifest" href="./manifest.json" />
-    <title>WebGAL</title>
+    <title>代码中的中国：1024航迹云</title>
     <style>
       html,
       body {
@@ -150,10 +150,7 @@
       <div class="title-enter__white-background"></div>
       <div class="title-enter__container">
         <div class="title-enter-container__center-text">
-          <div>PRESS THE SCREEN TO START</div>
-        </div>
-        <div class="title-enter-container__link-to-github">
-          <div>Powered by <a> WebGAL </a> Framework</div>
+          <div>点击屏幕开始</div>
         </div>
       </div>
     </div>
@@ -459,12 +456,6 @@
         const titleEnter = document.querySelector('.html-body__title-enter');
         if (titleEnter) {
           titleEnter.onclick = enter;
-        }
-        const linkToGithub = document.querySelector('.title-enter-container__link-to-github');
-        const aTag = linkToGithub?.querySelector('a');
-        if (aTag) {
-          aTag.href = 'https://github.com/OpenWebGAL/WebGAL';
-          aTag.onclick = (event) => event.stopPropagation();
         }
       })();
     </script>
