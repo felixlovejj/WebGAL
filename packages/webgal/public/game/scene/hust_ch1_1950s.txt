@@ -159,6 +159,7 @@ intro:"敢于竞争、善于转化"|——朱九思，1980年;
 林知远:砍一棵树都要校长审批的那个传说……
 
 陈老师:是真的。
+changeFigure:noen -left;
 
 jumpLabel:to_1970s;
 
@@ -207,6 +208,7 @@ miniAvatar:fig_zhangjl_mini.png;
 林知远:（沉默片刻）……所以不是"做不出来"，而是"还没开始做"。
 
 张江陵:说得好。
+changeFigure:none  -left;
 
 ;--- 过渡到抉择2 ---
 ;张工登场（80年代工程师，年轻一代）
