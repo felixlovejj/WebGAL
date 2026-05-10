@@ -1,42 +1,34 @@
 ;============================================
 ; 《代码中的中国：1024航迹云》
-; 序章：东九楼的奇点
+; 第一章：拓荒期（1950s-1980s）
 ;============================================
 
 ;--- 开场：东九楼赶作业 ---
 setVar:chapter=1;
 setVar:playerName=林知远;
-bgm:bgm_retro.mp3 -volume=50 -enter=3000;
-intro:晚上十一点，东九楼自习室|你盯着屏幕上的段错误，第7次尝试提交数据结构作业|窗外喻家山的轮廓隐没在夜色里;
+bgm:bgm_retro.mp3 -volume=60 -enter=2000;
+intro:晚上十一点，东九楼自习室|你盯着屏幕上的编译错误，第7次尝试提交数据结构作业;
 changeBg:bg_d9_night.jpg -next;
+林知远:（自言自语）不是吧……这红黑树的旋转逻辑明明是对的啊，怎么还是段错误……
 
-林知远:（瘫在椅子上）我就不信了……这个红黑树的旋转逻辑明明是对的……
-
-;注：系统介入 — 用 glitch 特效
-pixiInit;
-changeBg:bg_system.jpg -enter=shockwaveIn -exit=fadeOut -enterDuration=1500 -next;
+;注：可以用intro做蓝屏特效
+intro:WARNING: Segmentation Fault|Core Dumped……|等等，这是什么？;
+changeBg:bg_system.jpg -exit=fadeOut -enter=fadeIn -next;
 setTransition: -target=bg-main -enter=shockwaveIn -next;
 
-;系统精灵1024登场 — 用 shockwave + glow
+;系统精灵1024登场
 changeFigure:fig_1024.png -center -enter=shockwaveIn -next;
-setAnimation:shockwaveIn -target=fig-center -next;
+setAnimation:move-front-and-back -target=fig-center -continue;
 
 ;--- 系统空间 ---
-intro:【专业历史编译系统 v1.0】|正在建立历史上下文……|加载完成。|内核版本：1953-2026;
+;提示信息
+intro:【专业历史编译系统 v1.0】|正在建立历史上下文……|加载完成。欢迎进入代码的过去。;
 1024:叮！检测到一名正在debug的计算机学子。我是1024，你的历史编译助手。
 
-林知远:（揉眼睛）……什么情况？是不是我在东九楼通宵太久出现幻觉了？
+林知远:……什么情况？我是不是赶作业出现幻觉了？
 
-1024:不是幻觉。你现在接入的是"专业历史编译系统"——
+1024:不是幻觉哦。你现在接入的是"专业历史编译系统"——简单来说，我会带你看看，你现在写的每一行代码，背后站着多少前辈。
 
-1024:简单说，我会带你看看，你现在写的每一行代码背后，站着多少前辈。
+1024:准备好了吗？我们从最早的那一行代码开始——;
 
-1024:你知道吗？你现在打一个`gcc main.c`就能编译，按下F5就能debug——但这些"理所当然"，是几代人用一辈子换来的。
-
-1024:准备好了吗？我们从第一行代码开始——
-
-;--- 加载界面 ---
-changeFigure:none -center -exit=fadeOut;
-pixiInit;
-intro:正在编译历史上下文……|1953|喻家山下，一片荒野|华中工学院，刚刚成立;
 changeScene:hust_ch1_1950s.txt;
