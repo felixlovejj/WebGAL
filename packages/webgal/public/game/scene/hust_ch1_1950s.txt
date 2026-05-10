@@ -159,7 +159,7 @@ intro:"敢于竞争、善于转化"|——朱九思，1980年;
 林知远:砍一棵树都要校长审批的那个传说……
 
 陈老师:是真的。
-changeFigure:noen -left;
+changeFigure:none -left;
 
 jumpLabel:to_1970s;
 
@@ -208,11 +208,10 @@ miniAvatar:fig_zhangjl_mini.png;
 林知远:（沉默片刻）……所以不是"做不出来"，而是"还没开始做"。
 
 张江陵:说得好。
-changeFigure:none  -left;
+changeFigure:none -left;
 
 ;--- 过渡到抉择2 ---
 ;张工登场（80年代工程师，年轻一代）
-changeFigure:fig_zhangjl.png -left -exit=fadeOut;
 changeFigure:fig_zhang.png -right -enter=enter-from-right -next;
 miniAvatar:fig_zhang_mini.png;
 changeBg:bg_lab_1980s.jpg -exit=fadeOut -enter=fadeIn -next;
@@ -330,7 +329,7 @@ jumpLabel:B_merge;
 
 ;--- 合并 ---
 label:B_merge;
-changeFigure:none -right -exit=fadeOut;
+changeFigure:none -right;
 setTransition: -target=bg-main -exit=fadeOut -next;
 setAnimation:removeFilm -target=bg-main -next;
 
