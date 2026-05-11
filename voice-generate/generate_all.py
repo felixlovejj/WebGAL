@@ -14,7 +14,7 @@ from collections import defaultdict
 # ============================================================
 # CONFIGURATION
 # ============================================================
-API_KEY = "sk-api-9gkTfEnMqQbgoF5x6hhRnkT4a0hzwG78ygoDj_K__TZ3lfCkZ4B25K7Iu1PtvKAd1YHMFUg3lyq-p7azIsicMDGqOHHSLPDXfXNg4EaFKIi36SwfQxXE1_A"
+API_KEY = "sk-api--P3zNstAeJ8snsPs5Ie4G-dS31aTQbcxgCWouVnbcOSBWdcB_TwASDh4stf6JWx7_bbYShWVJcfMEQLdLt7hseMwfW8iAclAU_Zwy1wYHxeaBOaPlKo3-5Y"
 API_URL = "https://api.minimaxi.com/v1/t2a_v2"
 MODEL = "speech-2.8-hd"
 
