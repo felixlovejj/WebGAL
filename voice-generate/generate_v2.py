@@ -12,7 +12,7 @@ from collections import defaultdict
 # === Configuration ===
 API_KEY = "sk-api-9gkTfEnMqQbgoF5x6hhRnkT4a0hzwG78ygoDj_K__TZ3lfCkZ4B25K7Iu1PtvKAd1YHMFUg3lyq-p7azIsicMDGqOHHSLPDXfXNg4EaFKIi36SwfQxXE1_A"
 API_URL = "https://api.minimaxi.com/v1/t2a_v2"
-MODEL = "speech-02-hd"
+MODEL = "speech-2.8-hd"
 
 SCENE_DIR = Path("d:/project/WebGAL/packages/webgal/public/game/scene")
 SCENE_FILES = ["hust_ch1.txt", "hust_ch1_1950s.txt", "hust_ch2.txt", "hust_ch3.txt"]
