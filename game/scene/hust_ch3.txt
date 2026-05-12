@@ -213,6 +213,7 @@ setTransition: -target=bg-main -exit=fadeOut -next;
 
 intro:——时间回到现在——|毛概课堂 · 西十二楼S111教室|刚才的一切，仿佛只过了一瞬间;
 changeBg:bg_classroom.jpg -exit=fadeOut -enter=fadeIn -next;
+changeFigure:fig_qiu.png -left -enter=enter -next;
 
 邱老师:……所以，坚持把科技自立自强作为国家发展的战略支撑——理解这个，才读得懂中国式现代化。 -ch3_qiu_0004.mp3
 
@@ -220,7 +221,7 @@ changeBg:bg_classroom.jpg -exit=fadeOut -enter=fadeIn -next;
 
 邱老师:好，后排那位同学——看你若有所思的样子。你来谈谈，学了"科技自立自强"这一节，有什么体会？ -ch3_qiu_0005.mp3
 
-changeFigure:fig_lin.png -center -enter=enter -next;
+changeFigure:fig_lin.png -right -enter=enter -next;
 miniAvatar:fig_lin_mini.png;
 
 林知远:（缓缓站起来，沉默了几秒）老师，我想说——"科技自立自强"不是课本上的概念。 -ch3_lin_0045.mp3
