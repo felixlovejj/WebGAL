@@ -6,17 +6,22 @@ bgm:bgm_retro.mp3 -volume=60 -enter=2000;
 
 intro:周三下午 · 西十二楼S111教室|毛概课 · "新时代中国特色社会主义"专题|老师在台上讲"科技自立自强"|你在台下第7次尝试提交数据结构作业;
 changeBg:bg_classroom.jpg -next;
+changeFigure:fig_qiu.png -left -enter=enter -next;
+; // 为中间立绘设置一个从下方进入的动画，并转到下一句
+
 
 邱老师:（翻动课件）"科技是第一生产力、人才是第一资源、创新是第一动力"——新时代给我们的命题。哪位同学来说说理解？ -ch1_qiu_0001.mp3
 
 林知远:（头也不抬，盯着屏幕）段错误……段错误……指针到底哪里飞了…… -ch1_lin_0040.mp3
 
 邱老师:好，那位低着头的同学——请你回答，为什么科技自立自强是核心战略？ -ch1_qiu_0002.mp3
+changeFigure:fig_lin.png -right -enter=enter -next;
 
 林知远:（猛地站起来，随口接）因为……核心技术靠化缘是要不来的，必须靠自力更生…… -ch1_lin_0041.mp3
 ;其实他刚才在debug，但这句话确实背过
 
 邱老师:很好。看来你还是听讲了的。请坐。 -ch1_qiu_0003.mp3
+changeFigure:none -left;
 
 林知远:（坐下，嘀咕）自力更生……说得好。但我的红黑树什么时候才能自力更生编译通过啊…… -ch1_lin_0042.mp3
 
@@ -37,5 +42,6 @@ setAnimation:move-front-and-back -target=fig-center -continue;
 
 1024:准备好了吗？我们从最早的那一行代码开始—— -ch1_s1024_0003.mp3;
 changeFigure:none;
+changeFigure:none -right;
 
 changeScene:hust_ch1_1950s.txt;
