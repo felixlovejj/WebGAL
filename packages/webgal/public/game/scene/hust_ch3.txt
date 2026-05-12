@@ -184,13 +184,15 @@ changeBg:bg_hust_sunset.jpg -exit=fadeOut -enter=fadeIn -next;
 setTransition: -target=bg-main -enter=fadeIn -next;
 
 intro:尾声|2026年10月1日 · 新中国成立77周年;
+changeFigure:fig_1024.png -center -enter=enter -next;
 
 1024:无论你选了哪条路——你都做出了自己的回答。就像朱九思用"广积人"回答了"人才从哪里来"，就像冯丹用二十年回答了"中国能不能做自己的存储"。 -ch3_s1024_0017.mp3
 
 1024:"代码为谁而写？" -ch3_s1024_0018.mp3
+changeFigure:fig_1024.png -center -enter=enter -next;
 
 ;李教授寄语
-miniAvatar:fig_li_mini.png;
+miniAvatar:fig_li_mini.png - left ;
 李教授:（画外音）你们面对的是新的仗——AI霸权、算力霸权。但答案一样——"计服报国"。不是口号，是选择。 -ch3_li_0019.mp3
 
 ;主角独白
@@ -203,7 +205,36 @@ miniAvatar:fig_lin_mini.png;
 
 林知远:每一位计算机人，都是这个国家1024字节中的一个比特。单个的0或1没有意义——但连在一起，就是一个时代。 -ch3_lin_0039.mp3
 
+
+;--- 回到毛概课堂 ---
+setTransition: -target=bg-main -exit=fadeOut -next;
+
+intro:——时间回到现在——|毛概课堂 · 西十二楼S111教室|刚才的一切，仿佛只过了一瞬间;
+changeBg:bg_classroom.jpg -exit=fadeOut -enter=fadeIn -next;
+
+邱老师:（画外音，渐入）……所以，坚持把科技自立自强作为国家发展的战略支撑——理解这个，才读得懂中国式现代化。 -ch3_qiu_0004.mp3
+
+林知远:（怔怔地看着课本，喃喃）草棚教室……朱九思……冯丹……喻家山1号……（手指划过书页）原来你们都在这里。 -ch3_lin_0044.mp3
+
+邱老师:好，后排那位同学——看你若有所思的样子。你来谈谈，学了"科技自立自强"这一节，有什么体会？ -ch3_qiu_0005.mp3
+
+changeFigure:fig_lin.png -center -enter=enter -next;
+miniAvatar:fig_lin_mini.png;
+
+林知远:（缓缓站起来，沉默了几秒）老师，我想说——"科技自立自强"不是课本上的概念。 -ch3_lin_0045.mp3
+
+林知远:它是有人用纸和笔写下第一行汇编，有人用二十年把国产存储从5%做到60%，有人在喻家山上种了半辈子树——然后才有了我们现在在键盘上敲下的每一行代码。 -ch3_lin_0046.mp3
+
+邱老师:（愣了两秒，点头）……请坐。这个回答，我给满分。 -ch3_qiu_0006.mp3
+
+1024:（画外音，轻声）编译完成。历史上下文已提交。1024航迹云——写入成功。 -ch3_s1024_0020.mp3
+
+
+intro:全剧终|《代码中的中国：1024航迹云》|献给所有为这个时代写代码的人。;
+intro:组长：闵国东|剧本：娄卫健、田雨禾|bgm:娄卫健|立绘：闵国东|制作配音：王千允、娄卫健、刘瑞鹏|背景图：夏彦康、毕梓康、张哲|展示：田雨禾|------
+end;
+
 ;终幕
 intro:全剧终|《代码中的中国：1024航迹云》|献给所有为这个时代写代码的人。;
-intro:组长：闵国东|剧本：娄卫健、田雨禾|bgm:娄卫健||制作配音：王千允、娄卫健、刘瑞鹏|立绘：闵国东|背景图：夏彦康、毕梓康、张哲|展示：田雨禾|------
+
 end;
