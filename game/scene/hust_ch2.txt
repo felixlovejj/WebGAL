@@ -85,6 +85,8 @@ pixiInit;
 李教授:世界纪录被我们刷新了15倍。记住，不是跟在别人后面——是领先。 -ch2_li_0018.mp3
 
 setTransition: -target=bg-main -exit=fadeOut -next;
+changeFigure:fig_1024.png -center -enter=shockwaveIn -next;
+
 1024:技术从来不只是技术。是安全，是话语权，是一个国家的底气。 -ch2_s1024_0009.mp3
 changeFigure:none - left;
 changeFigure:none;
