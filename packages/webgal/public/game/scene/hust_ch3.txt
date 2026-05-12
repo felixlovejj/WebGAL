@@ -105,7 +105,7 @@ setVar:path=创业;
 changeFigure:none -right -next;
 changeFigure:none -center -next;
 
-林知远:我选择创业。第一章，前辈在草棚里办计算机专业。第二章，冯丹老师用二十年把中国存储从5%做到60%。第三章——轮到我了。 -ch3_lin_0032.mp3
+林知远:我选择创业。1950年代，前辈在草棚里办计算机专业。冯丹老师用二十年把中国存储从5%做到60%。而现在——轮到我了。-ch3_lin_0032.mp3
 
 苏师姐:欢迎。东九楼楼下24小时奶茶店——以后是我们的第二办公室。奶茶算公司福利，但你得搞定第一个客户。我已经约了武汉超算中心负责人，下周三面谈。 -ch3_su_0004.mp3
 
@@ -179,7 +179,7 @@ changeFigure:none -left -next;
 changeFigure:none -center -next;
 changeFigure:none -right -next;
 
-bgm:bgm_inspire.mp3 -volume=85 -enter=3000;
+bgm:bgm_inspire.mp3 -volume=85 ;
 changeBg:bg_hust_sunset.jpg -exit=fadeOut -enter=fadeIn -next;
 setTransition: -target=bg-main -enter=fadeIn -next;
 
@@ -204,21 +204,25 @@ miniAvatar:fig_lin_mini.png;
 林知远:我才真正明白——爱国，就是把你写的每一行代码，都当成国家未来的一部分。 -ch3_lin_0001.mp3
 
 林知远:每一位计算机人，都是这个国家1024字节中的一个比特。单个的0或1没有意义——但连在一起，就是一个时代。 -ch3_lin_0039.mp3
+changeFigure:none;
 
 
 ;--- 回到毛概课堂 ---
+bgm:bgm_inspire_2.mp3 -volume=85 ;
+
 setTransition: -target=bg-main -exit=fadeOut -next;
 
 intro:——时间回到现在——|毛概课堂 · 西十二楼S111教室|刚才的一切，仿佛只过了一瞬间;
 changeBg:bg_classroom.jpg -exit=fadeOut -enter=fadeIn -next;
+changeFigure:fig_qiu.png -left -enter=enter -next;
 
-邱老师:（画外音，渐入）……所以，坚持把科技自立自强作为国家发展的战略支撑——理解这个，才读得懂中国式现代化。 -ch3_qiu_0004.mp3
+邱老师:……所以，坚持把科技自立自强作为国家发展的战略支撑——理解这个，才读得懂中国式现代化。 -ch3_qiu_0004.mp3
 
 林知远:（怔怔地看着课本，喃喃）草棚教室……朱九思……冯丹……喻家山1号……（手指划过书页）原来你们都在这里。 -ch3_lin_0044.mp3
 
 邱老师:好，后排那位同学——看你若有所思的样子。你来谈谈，学了"科技自立自强"这一节，有什么体会？ -ch3_qiu_0005.mp3
 
-changeFigure:fig_lin.png -center -enter=enter -next;
+changeFigure:fig_lin.png -right -enter=enter -next;
 miniAvatar:fig_lin_mini.png;
 
 林知远:（缓缓站起来，沉默了几秒）老师，我想说——"科技自立自强"不是课本上的概念。 -ch3_lin_0045.mp3
@@ -232,9 +236,4 @@ miniAvatar:fig_lin_mini.png;
 
 intro:全剧终|《代码中的中国：1024航迹云》|献给所有为这个时代写代码的人。;
 intro:组长：闵国东|剧本：娄卫健、田雨禾|bgm:娄卫健|立绘：闵国东|制作配音：王千允、娄卫健、刘瑞鹏|背景图：夏彦康、毕梓康、张哲|展示：田雨禾|------
-end;
-
-;终幕
-intro:全剧终|《代码中的中国：1024航迹云》|献给所有为这个时代写代码的人。;
-
 end;
