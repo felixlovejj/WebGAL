@@ -7,12 +7,13 @@
 setVar:chapter=3;
 
 
+changeFigure:fig_su.png -left -enter=enter-from-left -next;
 
 
 intro:2026年秋|新中国成立77周年;
 changeBg:bg_hust_autumn.jpg -exit=fadeOut -enter=fadeIn -next;
 setTransition: -target=bg-main -enter=fadeIn -next;
-bgm:bgm_inspire.mp3 -volume=60 -enter=2000;
+bgm:bgm_inspire_222.mp3 -volume=60 -enter=2000;
 1024:你经历了三个时代——拓荒者的信仰、突围者的抉择、领航者的机遇。现在，轮到你自己了。三条路—— -ch3_s1024_0011.mp3
 
 
@@ -48,11 +49,7 @@ changeFigure:none -center -next;
 
 苏师姐:欢迎。东九楼楼下奶茶店以后是第二办公室——但你得搞定第一个客户。我已经约了武汉超算中心负责人，下周三面谈。 -ch3_su_0012.mp3
 
-changeBg:bg_startup_office.jpg -exit=fadeOut -enter=fadeIn -next;
-setTransition: -target=bg-main -enter=fadeIn -next;
-pixiInit;
 
-intro:三个月后 · 光谷创业街|40平米的办公室，6个人的团队;
 
 jumpLabel:F_merge;
 
@@ -97,7 +94,7 @@ changeFigure:none -left -next;
 changeFigure:none -center -next;
 changeFigure:none -right -next;
 
-bgm:bgm_inspire.mp3 -volume=85 ;
+bgm:bgm_inspire_222.mp3 -volume=85 ;
 changeBg:bg_hust_sunset.jpg -exit=fadeOut -enter=fadeIn -next;
 setTransition: -target=bg-main -enter=fadeIn -next;
 
